@@ -53,8 +53,18 @@ fun LibraryScreen(
             )
         },
         floatingActionButton = {
+            Row (
+                horizontalArrangement = Arrangement.spacedBy(16.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Button(onClick = { throw RuntimeException("Test Crash") }) {
+                    Text(text = "Crash")
+                }
+
             FloatingActionButton(onClick = onGenerate) {
                 Icon(Icons.Default.Add, null)
+            }
+
             }
         }
     ) { inner ->
@@ -70,11 +80,7 @@ fun LibraryScreen(
                     onDelete = { viewModel.deletePlan(it) }
                 )
             }
-            item {
-                Button(onClick = { throw RuntimeException("Test Crash") }) {
-                    Text(text = "Crash")
-                }
-            }
+
         }
     }
 }
