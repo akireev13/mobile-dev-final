@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "455360500120",
+    "project_id": "eat-smart-7938e",
+    "storage_bucket": "eat-smart-7938e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455360500120:android:f47808b145be4c85b69bed",
+        "android_client_info": {
+          "package_name": "com.yourproblem.eatsmart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNxjDmKiou1hRBg3H0FVWyTV2SliQxkKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
