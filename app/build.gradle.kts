@@ -5,6 +5,8 @@ plugins {
     id("com.google.gms.google-services")
     id("kotlin-parcelize")
     id("com.google.devtools.ksp")
+    id("com.google.firebase.crashlytics")
+
 }
 
 android {
@@ -83,7 +85,10 @@ dependencies {
     // When using the BoM, you don't specify versions in Firebase library dependencies
     implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-firestore-ktx")
-
+// Add the dependencies for the Crashlytics and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation("com.google.firebase:firebase-crashlytics")
+    implementation("com.google.firebase:firebase-analytics")
     // Since you're using Google Sign-In (which is enabled in your project!),
     // you'll also want to add the Credential Manager libraries for a smooth experience.
     implementation("androidx.credentials:credentials:1.3.0")

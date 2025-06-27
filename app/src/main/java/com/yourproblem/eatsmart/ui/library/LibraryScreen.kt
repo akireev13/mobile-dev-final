@@ -70,6 +70,11 @@ fun LibraryScreen(
                     onDelete = { viewModel.deletePlan(it) }
                 )
             }
+            item {
+                Button(onClick = { throw RuntimeException("Test Crash") }) {
+                    Text(text = "Crash")
+                }
+            }
         }
     }
 }
